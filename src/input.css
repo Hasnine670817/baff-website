@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-manrope text-black bg-white;
+  }
+
+  h1, h2 {
+    @apply text-primary font-extrabold;
+    color: #023134;
+    font-weight: 800;
+  }
+
+  /* Banner title specific font size */
+  section.pt-32 h1 {
+    font-size: 25px !important;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 14px;
+    color: #333333;
+  }
+
+  @media (min-width: 768px) {
+    section.pt-32 h1 {
+      font-size: 48px !important;
+      line-height: 62px !important;
+    }
+  }
+
+  @media (min-width: 992px) {
+    h1, h2 {
+      font-size: 48px !important;
+      line-height: 62px !important;
+    }
+    /* Reset banner title for large screens if needed, but user said 2.25em specifically for banner title */
+    section.pt-32 h1 {
+      font-size: 48px !important;
+      line-height: 62px !important;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333333;
+    }
+  }
+
+  
+}
+
+@layer components {
+  .container {
+    @apply sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1120px] 2xl:max-w-[1240px] mx-auto px-5;
+  }
+
+  .btn-primary-custom {
+    @apply bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-opacity-90 transition-all text-sm;
+  }
+
+  .section-title {
+    @apply text-3xl mb-6;
+  }
+
+  .feature-card {
+    @apply flex flex-col md:flex-row items-center gap-6 md:gap-8 xl:gap-12 py-10 md:py-16;
+  }
+
+  .feature-card.reverse {
+    @apply md:flex-row-reverse;
+  }
+
+  /* Banner Absolute Divs */
+  .banner-abs-div {
+    @apply z-10;
+  }
+
+  /* Mobile Menu Styles */
+  .mobile-link {
+    @apply text-lg font-semibold text-primary;
+  }
+
+  /* Swiper Cards Effect Customization */
+  .testimonialSwiper {
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    overflow: visible !important;
+  }
+
+  .testimonialSwiper .swiper-wrapper {
+    overflow: visible !important;
+  }
+
+  .testimonialSwiper .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

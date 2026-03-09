@@ -1,11 +1,37 @@
-<div align="center">
+# BAFF - Modern Banking Landing Page
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A pixel-perfect, modern, and fully responsive landing page for the **BAFF** banking application. This project showcases a clean fintech aesthetic, built with a focus on user experience and high-quality design.
 
-  <h1>Built with AI Studio</h2>
+## 🚀 Key Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Modern UI/UX:** Clean and professional design tailored for a fintech/banking app.
+- **Fully Responsive:** Optimized for all devices (Mobile, Tablet, and Desktop).
+- **Stacked Testimonial Slider:** A unique, interactive stacked card slider built with **Swiper.js**.
+- **Interactive FAQ:** Smooth accordion-style FAQ section for better user engagement.
+- **Built with Tailwind CSS:** Fast, utility-first styling for a lightweight and scalable codebase.
+- **Pixel-Perfect Design:** Closely follows modern design principles with attention to detail.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## 🛠️ Tech Stack
 
-</div>
+- **HTML5**
+- **Tailwind CSS**
+- **JavaScript (ES6+)**
+- **Swiper.js** (for the slider)
+- **Lucide Icons**
+- **jQuery** (for simple DOM manipulations)
+
+## 📦 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/baff-landing-page.git
+   ```
+2. Open `index.html` in your browser to view the page.
+
+## 📸 Screenshots
+
+*(Add your project screenshots here)*
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
