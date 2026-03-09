@@ -10,6 +10,7 @@ const port = 3000;
 
 // Serve static files
 app.use(express.static(process.cwd()));
+app.use(express.static(path.join(process.cwd(), 'public')));
 app.use('/dist', express.static(path.join(process.cwd(), 'dist')));
 app.use('/js', express.static(path.join(process.cwd(), 'js')));
 
