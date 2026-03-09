@@ -32,6 +32,3 @@ A pixel-perfect, modern, and fully responsive landing page for the **BAFF** bank
 
 *(Add your project screenshots here)*
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
