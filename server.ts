@@ -9,12 +9,12 @@ const app = express();
 const port = 3000;
 
 // Serve static files from the root directory
-app.use(express.static(__dirname));
-app.use('/dist', express.static(path.join(__dirname, 'dist')));
+app.use(express.static(process.cwd()));
+app.use('/dist', express.static(path.join(process.cwd(), 'dist')));
 
 // Fallback to index.html for SPA behavior
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(process.cwd(), 'index.html'));
 });
 
 // Start server locally
