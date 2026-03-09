@@ -9,9 +9,9 @@ const app = express();
 const port = 3000;
 
 // Serve static files
+app.use(express.static(process.cwd()));
 app.use('/dist', express.static(path.join(process.cwd(), 'dist')));
 app.use('/js', express.static(path.join(process.cwd(), 'js')));
-app.use('/src', express.static(path.join(process.cwd(), 'src')));
 
 // Fallback to index.html for SPA behavior
 app.get('*', (req, res) => {
