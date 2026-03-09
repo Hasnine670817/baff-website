@@ -10,12 +10,11 @@ const port = 3000;
 
 // Serve static files from the root directory
 app.use(express.static(__dirname));
+app.use('/dist', express.static(path.join(__dirname, 'dist')));
 
 // Fallback to index.html for SPA behavior
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(port, '0.0.0.0', () => {
-  console.log(`Server running at http://0.0.0.0:${port}`);
-});
+export default app;
